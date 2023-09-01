@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    user-select: none;
+    outline: none;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+body, html{
+    height: 100%;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-family:fantasy;
+    text-transform: uppercase;
+}
+
+.logo__text{
+    font-size: 24px;
+    line-height: 1em;
+}
+
+.logo__text span:nth-child(1) {
+    color: red;
+    letter-spacing: 0.1em;
+}
+
+.logo__text span:nth-child(2) {
+    color: white;
+}
+
+.logo__text span:nth-child(3) {
+    color: rgb(22, 184, 22);
+    letter-spacing: 0.1em;
+}
+
+.logo__text-btm{
+    font-size: 19.8px;
+    line-height: 1.2em;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: yellow;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0 14px 0;
+}
+
+.cash__num{
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.cash-main{
+    display: flex;
+    align-items: center;
+}
+
+.cash-main__text{
+    margin-right: 17px;
+}
+
+.cash__num:before{
+    content: "₴";
+    margin-right: 5px;
+    font-weight: 400;
+    font-size: 25px;
+    bottom: 1px;
+    position: relative;
+    color: rgb(66, 66, 66);
+}
+
+.cash{
+    color: black;
+    border-radius: 500px;
+    padding: 5px 7px 5px 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.cash__btn{
+    color: white;
+    display: block;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    cursor: pointer;
+    height: 29px;
+    background-color: black;
+    width: 29px;
+    border-radius: 500px;
+    margin-left: 20px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.game-display{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.game-wrap{
+    margin-top: 50px;
+}
+
+.game-display__random{
+    flex: 0 0 275px;
+    height: 275px;
+    background-color: rgba(255, 255, 255, 0.17);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+    font-family: fantasy;
+    
+   
+    border: 10px solid yellow;
+}
+
+.game-display__control{
+    flex-direction: column;
+    margin-left: 50px;
+    display: flex;
+}
+
+
+.game-display__num-wrap{
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    justify-content: space-between;
+}
+
+.game-display__num{
+    font-family: fantasy;
+    background-color: rgba(255, 255, 255, 0.17);
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.725);
+    border-radius: 10px;
+    height: 75px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.game-display__num:hover{
+    color: white;
+    border: 2px solid yellow;
+}
+
+.game-display__num + .game-display__num{
+    margin-left: 25px;
+}
+
+.btn-start{
+    background-color:rgb(22, 184, 22);
+    color: white;
+    border: 0px;
+    padding: 17px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.btn-start.stop{
+    background-color: rgb(183, 0, 0);
+    font-size: 24px;
+}
+
+.btn-start--control{
+    margin-top: 27px;
+}
+
+.game-text{
+    margin-bottom: 27px;
+    text-align: center;
+}
+
+.rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 0 24px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.366);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.366);
+}
+
+.rate__text{
+    margin-right: 25px;
+}
+
+.rate__nums-wrap{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+}
+
+.rate__num{
+    background-color: rgba(66, 66, 66, 0.442);
+    color: rgba(255, 255, 255, 0.585);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    display: flex;
+    border-radius: 5px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 0, 0.455);
+}
+
+.rate__num:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.154);
+    border: 1px solid yellow;
+}
+
+.rate__num:active{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.264);
+}
+
+.rate__input{
+    height: 65px;
+    background-color: rgb(66, 66, 66);
+    padding: 0 20px;
+    border: 0px;
+    outline: none;
+    margin-right: 14px;
+    display: block;
+    font-size: 45px;
+    width: 250px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.rate__input::placeholder{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: -7.5px;
+    font-family: sans-serif;
+}
+
+.rate__input-wrap{
+    display: flex;
+}
+
+.rate__main{
+    margin-right: 50px;
+    position: relative;
+}
+
+.btn-start--rate{
+    width: 165px;
+}
+
+.rate__main{
+    position: relative;
+}
+
+.rate__status{
+    position: absolute;
+    font-size: 17px;
+    top: -32px;
+}
+
+.rate__status-text.error{
+    color: rgb(183, 0, 0);
+}
+
+.rate__status-text.sucess{
+    color: rgb(22, 184, 22);
+}

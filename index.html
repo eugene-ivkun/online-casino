@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <div class="logo__text">
+                    <span>60</span>
+                    <span>/</span>
+                    <span>40</span>
+                </div>
+                <div class="logo__text-btm">Casino</div>
+            </div>
+            <div class="cash-main">
+                <span class="cash-main__text">Ваш счет:</span>
+                <div class="cash">
+                    <span class="cash__num">100</span>
+                    <button class="cash__btn">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="rate">
+            <div class="rate__main">
+                <div class="rate__status">
+                    <span class="rate__status-text"></span>
+                </div>
+                <div class="rate__input-wrap">
+                    <input placeholder="Введите ставку" type="text" class="rate__input">
+                    <button class="btn-start btn-start--rate" id="rate-btn">ОК</button>
+                </div>
+            </div>
+            <div class="rate__nums-wrap">
+                <div class="rate__num"></div>
+                <div class="rate__num"></div>
+                <div class="rate__num"></div>
+                <div class="rate__num"></div>
+                <div class="rate__num"></div>
+                <div class="rate__num"></div>
+            </div>
+        </div>
+        <div class="game-wrap">
+            <div class="game-display">
+                <div class="game-display__random">??</div>
+                <div class="game-display__control">
+                    <span class="game-display__text game-text">Выберите число:</span>
+                    <div class="game-display__num-wrap">
+                        <div class="game-display__num">??</div>
+                        <div class="game-display__num">??</div>
+                        <div class="game-display__num">??</div>
+                    </div>
+                    <button class="btn-start btn-start--control">Начать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
